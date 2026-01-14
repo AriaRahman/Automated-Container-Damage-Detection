@@ -1,7 +1,7 @@
 
-<h1 align="center">📦 Container Damage Detection using RF-DETR</h1>
+<h1 align="center"> Container Damage Detection using RF-DETR</h1>
 
-## 🚀 Overview
+## Overview
 This project implements an automated **container damage detection system** using the **RF-DETR (Roboflow Detection Transformer)** model.  
 The system identifies three types of container damages: **Dent**, **Hole**, and **Rust**, leveraging transformer-based architecture for high accuracy and efficiency.
 
@@ -13,7 +13,7 @@ The pipeline consists of:
 
 ---
 
-<h2>📂 Dataset</h2>
+<h2>Dataset</h2>
 - **Source:** https://roboflow.com  
 - **Size:** 5,761 images of shipping containers  
 - **Classes:** `dent`, `hole`, `rust`  
@@ -21,14 +21,14 @@ The pipeline consists of:
 
 ---
 
-<h2>🛠 Data Preprocessing</h2>
+<h2> Data Preprocessing</h2>
 To ensure consistency:
 - **Auto-Orient:** Correct image orientation using EXIF metadata  
 - **Resize:** All images resized to `640 × 640` pixels  
 
 ---
 
-<h2>🔄 Data Augmentation</h2>
+<h2> Data Augmentation</h2>
 - **Split:** `70%` training, `20%` validation, `10%` testing  
 - **Strategies:**  
   - Horizontal flip  
@@ -43,7 +43,7 @@ After augmentation:
 
 ---
 
-<h2>🤖 Model Architecture: RF-DETR</h2>
+<h2> Model Architecture: RF-DETR</h2>
 - **Base:** DETR by Facebook AI Research  
 - **Enhancements:**  
   - Deformable attention for multi-scale feature capture  
@@ -55,7 +55,7 @@ After augmentation:
 
 ---
 
-<h2>⚙️ Experimental Setup</h2>
+<h2> Experimental Setup</h2>
 - **Environment:** Google Colab Pro  
 - **Hardware:** NVIDIA A100-SXM4 GPU (80GB VRAM)  
 - **Software:**  
@@ -67,7 +67,7 @@ After augmentation:
 
 ---
 
-<h2>📊 Results</h2>
+<h2>Results</h2>
 ### Per-Class Metrics
 | Class | mAP[50:95] | mAP[50] | Precision | Recall |
 |-------|-----------|---------|-----------|--------|
@@ -87,7 +87,7 @@ After augmentation:
 
 ---
 
-<h2>✅ Conclusion</h2>
+<h2>Conclusion</h2>
 The RF-DETR model demonstrates superior performance in detecting container damages compared to YOLO-based models, achieving:
 - **Accuracy:** 94%  
 - **Precision:** 92%  
@@ -97,14 +97,14 @@ This approach improves inspection reliability and speed, reducing manual errors 
 
 ---
 
-<h2>🔮 Future Work</h2>
+<h2>Future Work</h2>
 - Hyperparameter optimization  
 - Model compression for real-time inference  
 - Scaling to larger variants for improved accuracy  
 
 ---
 
-<h2>▶️ How to Run</h2>
+<h2>How to Run</h2>
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/container-damage-detection.git
